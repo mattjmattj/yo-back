@@ -1,0 +1,26 @@
+<?php
+/**
+ * yo-back configuration.
+ * 
+ * this file must return an array with three things :
+ *     - the Yo API token to use
+ *     - a \Yo\HTTP\Client implementation
+ *     - a closure ($username:string, $payload:\Yo\Payload = null) : ?\Yo\Payload
+ * 
+ * The closure must process the incoming Yo and return a payload to Yo back.
+ * If the closure returns null, no payload will be attached and a simple Yo
+ * will be sent.
+ * If the closure throws no Yo will be sent back.
+ *
+ * Make sure you renamed this file as config.php instead of config.php.dist
+ */
+
+
+return [
+	'api_token'	=> 'YOUR-API-KEY-GOES-HERE',
+	'http' => new \Yo\HTTP\Client\LightCurl(),
+	'handler' => function($username, \Yo\Payload $payload = null) {
+		//TODO do something intelligent here
+		return null;
+	}
+];

@@ -1,0 +1,19 @@
+{
+	"name": "mattjmattj/yo-back",
+	"description": "PHP mini-framework to reply to Yo messages",
+	"license": "BSD-2-Clause",
+	"authors": [
+		{
+			"name": "Matthias Jouan",
+			"email": "matthias.jouan@gmail.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"YoBack\\": "src/YoBack"
+		}
+	},
+	"require": {
+		"mattjmattj/yo-client": "~1.0"
+	}
+}
