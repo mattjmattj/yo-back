@@ -1,5 +1,9 @@
 <?php
 /**
+ * This file is part of mattjmattj/yo-back
+ * @author Matthias Jouan <matthias.jouan@gmail.com>
+ * @license BSD-2-Clause
+ *
  * Entry point of a yo-back application.
  *
  * You must register a callback URL pointing to this file in your Yo dashboard
