@@ -19,7 +19,21 @@ Done! You're welcome.
 
 ## Demo
 
-Coming soon
+A demo YoApp is available, courtesy of [Emmanuel Pelletier](https://github.com/Leimi).
+If you Yo to **JEDEPRIME**, it will Yo you back a random page from http://jedepri.me.
+jedepri.me is a French site which will definitely cheer you up when you feel a little
+bit depressed.
+
+The demo consists in the following configuration:
+```php
+return [
+	'api_token'	=> 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx',
+	'http' => new \Yo\HTTP\Client\LightCurl(),
+	'handler' => function($username, \Yo\Payload $payload = null) {
+		return new \Yo\Link('http://jedepri.me/toujours/');
+	}
+];
+```
 
 ## License
 
